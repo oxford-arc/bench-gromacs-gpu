@@ -18,7 +18,7 @@ for d in gromacs/*
 do 
 	echo $d
 	cd $d
-	singularity run --nv -B ${PWD}:/host_pwd --pwd /host_pwd ../../image/gromacs-2018.2.simg gmx mdrun -deffnm benchmark -ntomp ${SLURM_CPUS_PER_TASK}
+	singularity run --nv -B ${PWD}:/host_pwd --pwd /host_pwd ../../image/gromacs-2018.2.simg gmx mdrun -deffnm benchmark -ntmpi 1 -ntomp 5
 	cd ../..
 done
 
