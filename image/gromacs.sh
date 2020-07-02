@@ -11,7 +11,7 @@ export TARGET=gromacs-2018.2.simg
 #
 # ARC Specifics
 #
-module load /system/arcus/modules/singularity/3.5.3
+# module load /system/arcus/modules/singularity/3.5.3
 #
 # --------------- END -----------------------------
 
