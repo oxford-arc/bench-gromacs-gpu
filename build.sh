@@ -10,7 +10,10 @@ tar xzf hecbiosim-gromacs.tgz
 echo "Downloading Singularity image..."
 cd image
 singularity pull library://oxford-arc/default/gromacs2018.2-test:sha256.a62bf1b6c9a6e850441b13fd74ad70ed24e573c85d1600eb9bd48041cb9eec1d
-sh gromacs.sh
+
+# If download above fails use the script below to build.
+# sh gromacs.sh
+
 cd ..
 
 echo "End of build script"
