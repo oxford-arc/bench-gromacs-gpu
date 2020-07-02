@@ -9,8 +9,8 @@
 
 # ARC Specifics
 #
-module purge
-module load /system/arcus/modules/singularity/3.5.3
+#module purge
+#module load /system/arcus/modules/singularity/3.5.3
 #
 #------------------- END --------------------------
 
