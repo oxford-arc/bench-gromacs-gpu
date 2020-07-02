@@ -3,8 +3,7 @@
 echo "Building GROMACS benchmark environment"
 
 echo "Extracting HECBIOSIM benchmarks..."
-wget http://www.hecbiosim.ac.uk/gromacs-benchmarks/send/2-software/8-gromacs-bench 
-mv 8-gromacs-bench hecbiosim-gromacs.tgz
+wget -O hecbiosim-gromacs.tgz http://www.hecbiosim.ac.uk/gromacs-benchmarks/send/2-software/8-gromacs-bench
 tar xzf hecbiosim-gromacs.tgz
 
 echo "Downloading Singularity image..."
